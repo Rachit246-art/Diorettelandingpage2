@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salone - Premium Salon & Beauty Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="logo">
+                <h1>SALONE</h1>
+                <p>Luxury Beauty Studio</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2 class="hero-title">Luxury Beauty Redefined</h2>
+        <p class="hero-subtitle">Experience World-Class Salon Services at Salone</p>
+        <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Book Appointment</button>
+    </div>
+    <img src="images/hero-salon.jpg" alt="Luxury Salon" class="hero-image">
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" data-target="500">0</div>
+                <p class="stat-label">Happy Clients</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="15">0</div>
+                <p class="stat-label">Expert Stylists</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="25">0</div>
+                <p class="stat-label">Services Offered</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="8">0</div>
+                <p class="stat-label">Years Experience</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Premium Services</h2>
+            <p>Discover our exclusive collection of beauty and wellness services</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="images/service-hair.jpg" alt="Hair Services">
+                <h3>Hair Services</h3>
+                <p>Professional haircuts, coloring, treatments, and styling by expert stylists using premium products.</p>
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+            <div class="service-card">
+                <img src="images/service-makeup.jpg" alt="Makeup Services">
+                <h3>Makeup Services</h3>
+                <p>Bridal makeup, party makeup, and everyday makeup with professional artists and quality products.</p>
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+            <div class="service-card">
+                <img src="images/service-skincare.jpg" alt="Skincare Services">
+                <h3>Skincare & Facial</h3>
+                <p>Advanced facial treatments, skincare consultations, and rejuvenation therapies for all skin types.</p>
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+            <div class="service-card">
+                <img src="images/service-nails.jpg" alt="Nail Services">
+                <h3>Nail Art Services</h3>
+                <p>Manicure, pedicure, gel nails, and custom nail art designs for special occasions.</p>
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Work Gallery</h2>
+            <p>Explore our portfolio of beautiful transformations</p>
+        </div>
+        
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="hair">Hair</button>
+            <button class="filter-btn" data-filter="makeup">Makeup</button>
+            <button class="filter-btn" data-filter="nails">Nails</button>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Hair Category -->
+            <div class="gallery-item" data-category="hair">
+                <img src="images/gallery-hair-1.jpg" alt="Hair Style 1">
+                <div class="gallery-overlay">
+                    <span>Hair Services</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="hair">
+                <img src="images/gallery-hair-2.jpg" alt="Hair Style 2">
+                <div class="gallery-overlay">
+                    <span>Hair Services</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="hair">
+                <img src="images/gallery-hair-3.jpg" alt="Hair Style 3">
+                <div class="gallery-overlay">
+                    <span>Hair Services</span>
+                </div>
+            </div>
+
+            <!-- Makeup Category -->
+            <div class="gallery-item" data-category="makeup">
+                <img src="images/gallery-makeup-1.jpg" alt="Makeup 1">
+                <div class="gallery-overlay">
+                    <span>Makeup Services</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="makeup">
+                <img src="images/gallery-makeup-2.jpg" alt="Makeup 2">
+                <div class="gallery-overlay">
+                    <span>Makeup Services</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="makeup">
+                <img src="images/gallery-makeup-3.jpg" alt="Makeup 3">
+                <div class="gallery-overlay">
+                    <span>Makeup Services</span>
+                </div>
+            </div>
+
+            <!-- Nails Category -->
+            <div class="gallery-item" data-category="nails">
+                <img src="images/gallery-nails-1.jpg" alt="Nails 1">
+                <div class="gallery-overlay">
+                    <span>Nail Services</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="nails">
+                <img src="images/gallery-nails-2.jpg" alt="Nails 2">
+                <div class="gallery-overlay">
+                    <span>Nail Services</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Find answers to common questions about our services</p>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What are your working hours?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We are open Monday to Sunday from 10:00 AM to 8:00 PM. We also offer extended hours on weekends and special appointment requests.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do you offer home service?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, we provide home service for selected treatments including bridal makeup, hair styling, and special occasion services. Contact us for more details.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How far in advance should I book?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We recommend booking at least 2-3 days in advance for regular services and 2-3 weeks for special occasions like weddings or events.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What products do you use?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We use only premium, internationally acclaimed brands for all our services. All products are cruelty-free and suitable for all skin types.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do you have cancellation policy?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Cancellations made 24 hours before the appointment are free. Cancellations within 24 hours may incur a 50% cancellation fee.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do you offer gift cards?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! We offer gift cards in various denominations. They make perfect gifts for birthdays, anniversaries, and special occasions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <h2>What Our Clients Say</h2>
+            <p>Real stories from our satisfied customers</p>
+        </div>
+        
+        <div class="testimonials-wrapper">
+            <img src="images/testimonial.jpg" alt="Our Team" class="testimonial-image">
+            
+            <div class="testimonials-carousel">
+                <div class="testimonial-slide active">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Salone is my go-to place for all beauty needs. The staff is incredibly professional and the results are always amazing. Highly recommended!"</p>
+                    <p class="testimonial-author">- Priya Sharma</p>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The bridal makeup service was exceptional. I felt beautiful and confident on my wedding day. Thank you, Salone team!"</p>
+                    <p class="testimonial-author">- Anjali Patel</p>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Best hair salon in the city! The haircut and color treatment are perfect. The ambiance is so luxurious and relaxing."</p>
+                    <p class="testimonial-author">- Neha Kapoor</p>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"I'm obsessed with my nail art design. The artist was so talented and creative. Definitely coming back for more!"</p>
+                    <p class="testimonial-author">- Megha Singh</p>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The facial treatment left my skin glowing and refreshed. Professional service and amazing results. A+ experience!"</p>
+                    <p class="testimonial-author">- Ritika Desai</p>
+                </div>
+            </div>
+
+            <div class="testimonial-controls">
+                <button class="carousel-btn prev" onclick="changeTestimonial(-1)">❮</button>
+                <button class="carousel-btn next" onclick="changeTestimonial(1)">❯</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-wrapper">
+            <div class="contact-form-section">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>Book your appointment or send us a message</p>
+                </div>
+                
+                <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Select Service *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Choose a service</option>
+                            <option value="hair">Hair Services</option>
+                            <option value="makeup">Makeup Services</option>
+                            <option value="skincare">Skincare & Facial</option>
+                            <option value="nails">Nail Art Services</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Date *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Book Appointment</button>
+                </form>
+                <div id="form-message" class="form-message"></div>
+            </div>
+
+            <div class="contact-image-section">
+                <img src="images/contact-salon.jpg" alt="Salone Salon Interior">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SALONE</h3>
+                <p>Your premier destination for luxury beauty and wellness services.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">i</a>
+                    <a href="#" class="social-icon">t</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📍 123 Luxury Avenue, Beauty City</p>
+                <p>📞 +1 (555) 123-4567</p>
+                <p>📧 hello@salone.com</p>
+                <p>🕐 Mon-Sun: 10 AM - 8 PM</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe for updates and special offers</p>
+                <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Salone - Luxury Beauty Studio. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
