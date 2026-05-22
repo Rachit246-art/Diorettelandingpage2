@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIORETTE - Luxury Salon & Café</title>
+    <title>Salone - Premium Salon & Beauty Studio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,11 +13,8 @@
     <div class="container">
         <div class="nav-wrapper">
             <div class="logo">
-                <img src="/logo.png" alt="DIORETTE" class="logo-img">
-                <div class="logo-text">
-                    <h1>DIORETTE</h1>
-                    <p>SALON • CAFÉ</p>
-                </div>
+                <h1>SALONE</h1>
+                <p>Luxury Beauty Studio</p>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -32,43 +29,14 @@
     </div>
 </nav>
 
-<!-- Hero Section with Carousel -->
-<section id="home" class="hero-carousel">
-    <div class="hero-slide active" style="background-image: url('/hero-1.jpg');">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h2 class="hero-title">Luxury Hair Services</h2>
-            <p class="hero-subtitle">Expert Styling with Premium Products</p>
-            <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Book Appointment</button>
-        </div>
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2 class="hero-title">Luxury Beauty Redefined</h2>
+        <p class="hero-subtitle">Experience World-Class Salon Services at Salone</p>
+        <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Book Appointment</button>
     </div>
-
-    <div class="hero-slide" style="background-image: url('/hero-2.jpg');">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h2 class="hero-title">Rejuvenating Skincare</h2>
-            <p class="hero-subtitle">Premium Facial Treatments & Spa Services</p>
-            <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Book Appointment</button>
-        </div>
-    </div>
-
-    <div class="hero-slide" style="background-image: url('/hero-3.jpg');">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h2 class="hero-title">Elegant Nail Art</h2>
-            <p class="hero-subtitle">Creative Designs & Professional Manicure</p>
-            <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Book Appointment</button>
-        </div>
-    </div>
-
-    <button class="carousel-nav prev" onclick="changeHeroSlide(-1)">❮</button>
-    <button class="carousel-nav next" onclick="changeHeroSlide(1)">❯</button>
-
-    <div class="carousel-dots">
-        <span class="dot active" onclick="goToHeroSlide(0)"></span>
-        <span class="dot" onclick="goToHeroSlide(1)"></span>
-        <span class="dot" onclick="goToHeroSlide(2)"></span>
-    </div>
+    <img src="/hero-salon.jpg" alt="Luxury Salon" class="hero-image">
 </section>
 
 <!-- Stats Section -->
@@ -99,45 +67,33 @@
 <section id="services" class="services">
     <div class="container">
         <div class="section-header">
-            <h2>Our Luxurious Services</h2>
-            <p>From world-class hair styling to rejuvenating skincare and premium café experience</p>
+            <h2>Our Premium Services</h2>
+            <p>Discover our exclusive collection of beauty and wellness services</p>
         </div>
         <div class="services-grid">
             <div class="service-card">
-                <img src="/service-hair-new.jpg" alt="Hair Services">
+                <img src="/service-hair.jpg" alt="Hair Services">
                 <h3>Hair Services</h3>
-                <p>Perfectly styled, deeply nourished. Advanced treatments and precision cuts by expert stylists.</p>
-                <a href="#" class="service-link">Explore Hair Services →</a>
+                <p>Professional haircuts, coloring, treatments, and styling by expert stylists using premium products.</p>
+                <button class="btn btn-secondary">Learn More</button>
             </div>
             <div class="service-card">
-                <img src="/service-skin-new.jpg" alt="Skincare Services">
-                <h3>Skin & Facial</h3>
-                <p>Radiance that reflects true luxury. Rejuvenating skincare rituals to restore your natural glow.</p>
-                <a href="#" class="service-link">Discover Skin Treatments →</a>
+                <img src="/service-makeup.jpg" alt="Makeup Services">
+                <h3>Makeup Services</h3>
+                <p>Bridal makeup, party makeup, and everyday makeup with professional artists and quality products.</p>
+                <button class="btn btn-secondary">Learn More</button>
             </div>
             <div class="service-card">
-                <img src="/service-nails-new.jpg" alt="Nail Services">
+                <img src="/service-skincare.jpg" alt="Skincare Services">
+                <h3>Skincare & Facial</h3>
+                <p>Advanced facial treatments, skincare consultations, and rejuvenation therapies for all skin types.</p>
+                <button class="btn btn-secondary">Learn More</button>
+            </div>
+            <div class="service-card">
+                <img src="/service-nails.jpg" alt="Nail Services">
                 <h3>Nail Art Services</h3>
-                <p>Flawless nails, crafted like art. Elegant finishes and statement designs for premium nail care.</p>
-                <a href="#" class="service-link">View Nail Services →</a>
-            </div>
-            <div class="service-card">
-                <img src="/service-kids-new.jpg" alt="Kids Services">
-                <h3>Kids Services</h3>
-                <p>Gentle care for little luxuries. Safe, relaxing grooming experiences specially designed for children.</p>
-                <a href="#" class="service-link">Explore Kids Services →</a>
-            </div>
-            <div class="service-card">
-                <img src="/service-grooming-new.jpg" alt="Grooming Services">
-                <h3>Signature Grooming</h3>
-                <p>Luxury grooming for every style. Personalized beauty and grooming for both men and women.</p>
-                <a href="#" class="service-link">Discover Signature Grooming →</a>
-            </div>
-            <div class="service-card">
-                <img src="/service-cafe-new.jpg" alt="Café Services">
-                <h3>Café Experience</h3>
-                <p>Relax, sip, indulge, repeat. Savor artisanal coffee and curated bites in serene atmosphere.</p>
-                <a href="#" class="service-link">Visit The Café →</a>
+                <p>Manicure, pedicure, gel nails, and custom nail art designs for special occasions.</p>
+                <button class="btn btn-secondary">Learn More</button>
             </div>
         </div>
     </div>
@@ -154,14 +110,12 @@
         <div class="gallery-filters">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="hair">Hair</button>
-            <button class="filter-btn" data-filter="skin">Skin</button>
+            <button class="filter-btn" data-filter="makeup">Makeup</button>
             <button class="filter-btn" data-filter="nails">Nails</button>
-            <button class="filter-btn" data-filter="grooming">Grooming</button>
-            <button class="filter-btn" data-filter="cafe">Café</button>
         </div>
 
         <div class="gallery-grid">
-            <!-- Hair Gallery -->
+            <!-- Hair Category -->
             <div class="gallery-item" data-category="hair">
                 <img src="/gallery-hair-1.jpg" alt="Hair Style 1">
                 <div class="gallery-overlay">
@@ -180,72 +134,38 @@
                     <span>Hair Services</span>
                 </div>
             </div>
-            <div class="gallery-item" data-category="hair">
-                <img src="/gallery-hair-4.jpg" alt="Hair Style 4">
+
+            <!-- Makeup Category -->
+            <div class="gallery-item" data-category="makeup">
+                <img src="/gallery-makeup-1.jpg" alt="Makeup 1">
                 <div class="gallery-overlay">
-                    <span>Hair Services</span>
+                    <span>Makeup Services</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="makeup">
+                <img src="/gallery-makeup-2.jpg" alt="Makeup 2">
+                <div class="gallery-overlay">
+                    <span>Makeup Services</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="makeup">
+                <img src="/gallery-makeup-3.jpg" alt="Makeup 3">
+                <div class="gallery-overlay">
+                    <span>Makeup Services</span>
                 </div>
             </div>
 
-            <!-- Skin Gallery -->
-            <div class="gallery-item" data-category="skin">
-                <img src="/gallery-skin-1.jpg" alt="Skincare 1">
-                <div class="gallery-overlay">
-                    <span>Skin & Facial</span>
-                </div>
-            </div>
-            <div class="gallery-item" data-category="skin">
-                <img src="/gallery-skin-2.jpg" alt="Skincare 2">
-                <div class="gallery-overlay">
-                    <span>Skin & Facial</span>
-                </div>
-            </div>
-
-            <!-- Nails Gallery -->
+            <!-- Nails Category -->
             <div class="gallery-item" data-category="nails">
                 <img src="/gallery-nails-1.jpg" alt="Nails 1">
                 <div class="gallery-overlay">
-                    <span>Nail Art</span>
+                    <span>Nail Services</span>
                 </div>
             </div>
             <div class="gallery-item" data-category="nails">
                 <img src="/gallery-nails-2.jpg" alt="Nails 2">
                 <div class="gallery-overlay">
-                    <span>Nail Art</span>
-                </div>
-            </div>
-            <div class="gallery-item" data-category="nails">
-                <img src="/gallery-nails-3.jpg" alt="Nails 3">
-                <div class="gallery-overlay">
-                    <span>Nail Art</span>
-                </div>
-            </div>
-
-            <!-- Grooming Gallery -->
-            <div class="gallery-item" data-category="grooming">
-                <img src="/gallery-grooming-1.jpg" alt="Grooming 1">
-                <div class="gallery-overlay">
-                    <span>Signature Grooming</span>
-                </div>
-            </div>
-            <div class="gallery-item" data-category="grooming">
-                <img src="/gallery-grooming-2.jpg" alt="Grooming 2">
-                <div class="gallery-overlay">
-                    <span>Signature Grooming</span>
-                </div>
-            </div>
-
-            <!-- Café Gallery -->
-            <div class="gallery-item" data-category="cafe">
-                <img src="/gallery-cafe-1.jpg" alt="Café 1">
-                <div class="gallery-overlay">
-                    <span>Café Experience</span>
-                </div>
-            </div>
-            <div class="gallery-item" data-category="cafe">
-                <img src="/gallery-cafe-2.jpg" alt="Café 2">
-                <div class="gallery-overlay">
-                    <span>Café Experience</span>
+                    <span>Nail Services</span>
                 </div>
             </div>
         </div>
@@ -327,61 +247,48 @@
 <section id="testimonials" class="testimonials">
     <div class="container">
         <div class="section-header">
-            <h2>What Our Guests Are Saying</h2>
-            <p>Real stories of transformation and relaxation from Bangalore's most elite salon and café</p>
+            <h2>What Our Clients Say</h2>
+            <p>Real stories from our satisfied customers</p>
         </div>
         
-        <div class="testimonials-carousel-wrapper">
-            <div class="testimonials-grid">
-                <div class="testimonial-card active">
-                    <div class="testimonial-image">
-                        <img src="/testimonial-1.jpg" alt="Megha Uppal">
-                    </div>
-                    <div class="testimonial-content">
-                        <div class="stars">★★★★★</div>
-                        <div class="verified-badge">Google Verified</div>
-                        <p class="testimonial-text">"I got my hair color done by Sandy, and I'm absolutely in love with the results! The staff is super friendly and welcoming, and the salon itself feels so luxurious. Left feeling pampered and so happy with my new look. Highly recommend!"</p>
-                        <p class="testimonial-author">Megha Uppal</p>
-                        <p class="testimonial-review">Google Review</p>
-                    </div>
+        <div class="testimonials-wrapper">
+            <img src="/testimonial.jpg" alt="Our Team" class="testimonial-image">
+            
+            <div class="testimonials-carousel">
+                <div class="testimonial-slide active">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Salone is my go-to place for all beauty needs. The staff is incredibly professional and the results are always amazing. Highly recommended!"</p>
+                    <p class="testimonial-author">- Priya Sharma</p>
                 </div>
 
-                <div class="testimonial-card">
-                    <div class="testimonial-image">
-                        <img src="/testimonial-2.jpg" alt="Jahnavi Appinbail">
-                    </div>
-                    <div class="testimonial-content">
-                        <div class="stars">★★★★★</div>
-                        <div class="verified-badge">Google Verified</div>
-                        <p class="testimonial-text">"I recently visited Diorette for a haircut and had the pleasure of getting my hair styled by Alina, a senior stylist. Alina is truly great at what she does. Her expertise was evident in the way she handled the haircut, ensuring every detail was perfect."</p>
-                        <p class="testimonial-author">Jahnavi Appinbail</p>
-                        <p class="testimonial-review">Google Review</p>
-                    </div>
+                <div class="testimonial-slide">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The bridal makeup service was exceptional. I felt beautiful and confident on my wedding day. Thank you, Salone team!"</p>
+                    <p class="testimonial-author">- Anjali Patel</p>
                 </div>
 
-                <div class="testimonial-card">
-                    <div class="testimonial-image">
-                        <img src="/testimonial-3.jpg" alt="Kashish Pashan">
-                    </div>
-                    <div class="testimonial-content">
-                        <div class="stars">★★★★★</div>
-                        <div class="verified-badge">Google Verified</div>
-                        <p class="testimonial-text">"Got my hair done for an event and loved the experience. It was really relaxing and all products were used after analyzing my hair type. 10/10 would recommend to anyone looking for a premium salon experience."</p>
-                        <p class="testimonial-author">Kashish Pashan</p>
-                        <p class="testimonial-review">Google Review</p>
-                    </div>
+                <div class="testimonial-slide">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Best hair salon in the city! The haircut and color treatment are perfect. The ambiance is so luxurious and relaxing."</p>
+                    <p class="testimonial-author">- Neha Kapoor</p>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"I'm obsessed with my nail art design. The artist was so talented and creative. Definitely coming back for more!"</p>
+                    <p class="testimonial-author">- Megha Singh</p>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The facial treatment left my skin glowing and refreshed. Professional service and amazing results. A+ experience!"</p>
+                    <p class="testimonial-author">- Ritika Desai</p>
                 </div>
             </div>
 
             <div class="testimonial-controls">
                 <button class="carousel-btn prev" onclick="changeTestimonial(-1)">❮</button>
                 <button class="carousel-btn next" onclick="changeTestimonial(1)">❯</button>
-            </div>
-
-            <div class="carousel-dots">
-                <span class="dot active" onclick="goToTestimonial(0)"></span>
-                <span class="dot" onclick="goToTestimonial(1)"></span>
-                <span class="dot" onclick="goToTestimonial(2)"></span>
             </div>
         </div>
     </div>
@@ -418,11 +325,9 @@
                         <select id="service" name="service" required>
                             <option value="">Choose a service</option>
                             <option value="hair">Hair Services</option>
-                            <option value="skin">Skin & Facial</option>
+                            <option value="makeup">Makeup Services</option>
+                            <option value="skincare">Skincare & Facial</option>
                             <option value="nails">Nail Art Services</option>
-                            <option value="kids">Kids Services</option>
-                            <option value="grooming">Signature Grooming</option>
-                            <option value="cafe">Café Experience</option>
                         </select>
                     </div>
 
@@ -442,7 +347,7 @@
             </div>
 
             <div class="contact-image-section">
-                <img src="/contact-salon.jpg" alt="DIORETTE Salon Interior">
+                <img src="/contact-salon.jpg" alt="Salone Salon Interior">
             </div>
         </div>
     </div>
@@ -453,7 +358,7 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>DIORETTE</h3>
+                <h3>SALONE</h3>
                 <p>Your premier destination for luxury beauty and wellness services.</p>
                 <div class="social-links">
                     <a href="#" class="social-icon">f</a>
@@ -474,9 +379,9 @@
 
             <div class="footer-section">
                 <h4>Contact Info</h4>
-                <p>📍 123 Luxury Avenue, Bangalore</p>
+                <p>📍 123 Luxury Avenue, Beauty City</p>
                 <p>📞 +1 (555) 123-4567</p>
-                <p>📧 hello@diorette.com</p>
+                <p>📧 hello@salone.com</p>
                 <p>🕐 Mon-Sun: 10 AM - 8 PM</p>
             </div>
 
@@ -491,7 +396,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2024 DIORETTE - Luxury Salon & Café. All rights reserved.</p>
+            <p>&copy; 2024 Salone - Luxury Beauty Studio. All rights reserved.</p>
         </div>
     </div>
 </footer>
